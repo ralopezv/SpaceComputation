@@ -1,10 +1,12 @@
-prev2 = 0
-prev1 = 1
-
-print(prev2)
-print(prev1)
-for fibo in range(18):
-    newFibo = prev1 + prev2
-    print(newFibo)
-    prev2 = prev1
-    prev1 = newFibo
+def Fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)
+    
+def eccentricity(a, b):
+    if a <= 0 or b <= 0:
+        raise ValueError("Semi-major axis (a) and semi-minor axis (b) must be positive.")
+    return (1 - (b**2 / a**2)) ** 0.5
