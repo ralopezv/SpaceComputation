@@ -4,4 +4,9 @@ def AUConversion(distanceInKilometers):
 
 def LightYearConversion(distanceInKilometers):
     LightYear = 9.461 * 10^12
-    return distanceInKilometers/LightYear   
+    return distanceInKilometers/LightYear
+
+def ParsecConversion(distanceInKilometers):
+    Parsec = 3.086 * 10^13
+    return distanceInKilometers/Parsec
+ 
